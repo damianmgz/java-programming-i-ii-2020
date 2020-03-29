@@ -30,13 +30,11 @@ public class Store {
             // Add code here that adds the product to the cart,
             // IF there is any in the warehouse, and reduces the stock in the warehouse
             // Dont't do touch any of the other code!
-            if (this.warehouse.stock(product) == 0) {
-                continue;
+            if (this.warehouse.stock(product) != 0) {
+                this.warehouse.take(product);
+            
+                cart.add(product, this.warehouse.price(product));
             }
-            this.warehouse.take(product);
-            
-            cart.add(product, this.warehouse.price(product));
-            
             
         }
 
