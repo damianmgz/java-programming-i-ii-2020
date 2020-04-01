@@ -28,5 +28,10 @@ public class Book {
     public int getPagecount() {
         return pageCount;
     }
-
+    
+    @Override
+    public String toString() {
+        return this.getName() + " was written in " + this.getPublishingYear() + " by " + this.getAuthor() 
+               + " and has " + this.getPagecount() + " pages.";
+    }
 }
