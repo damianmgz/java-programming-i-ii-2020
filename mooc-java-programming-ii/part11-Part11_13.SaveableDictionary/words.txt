@@ -1,3 +1,5 @@
-apina:monkey
 alla oleva:below
+apina:monkey
 olut:beer
+banaani:banana
+ohjelmointi:programming
